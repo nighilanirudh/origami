@@ -1,0 +1,38 @@
+/* ========================================================================= */
+/* INTRODUCING */
+/* ========================================================================= */
+.intro-photo {
+  background: url("../Image Assets/building.jpeg");
+  height: 100%;
+}
+.intro {
+  background-color: #D71D20;
+  margin: auto;
+  padding: 3.5%;
+  width: 70%;
+}
+.intro h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+  letter-spacing: 2.5vw;
+}
+.intro img {
+  border: 0;
+}
+.find-out-more {
+  bottom: 0;
+  left: 30%;
+  position: absolute;
+  width: 40%;
+}
+.find-out-more h6{
+  font-size: 2vw;
+  margin: 2%;
+  padding: 0;
+}
+/* ========================================================================= */
+/* photo-CONTAINERS */
+/* ========================================================================= */
+.the-body {
+  background: url(https://ak.picdn.net/shutterstock/videos/11373104/thumb/9.jpg);
+}

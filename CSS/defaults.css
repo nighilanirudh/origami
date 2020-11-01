@@ -1,0 +1,293 @@
+/* ========================================================================= */
+/* Elements */
+/* ========================================================================= */
+html, body {
+  background-color: #000000;
+  color: #F9F1F1;
+  height: 100%;
+  width: 100%;
+}
+h1, h2, h3, h4, h5 ,h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 4vw;
+}
+h2 {
+  font-size: 3.25vw;
+}
+h3 {
+  font-size: 2.75vw;
+}
+h4 {
+  font-size: 2.5vw;
+}
+h5 {
+  font-size: 2.25vw;
+}
+h6 {
+  font-size: 2vw;
+}
+p, a {
+  color: inherit;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5vw;
+  opacity: 0.65;
+}
+a:hover{
+  color: inherit;
+  opacity: 1;
+  text-decoration: none;
+}
+img {
+  border: 2px solid rgba(242, 24, 47, 0.3);
+  width: 100%;
+}
+hr {
+  border-top: 5px solid rgba(242, 24, 47, 0.3);
+}
+/* ------------------------------- */
+/* Mobile Site */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6.5vw;
+  }
+  h3 {
+    font-size: 5.5vw;
+  }
+  h4 {
+    font-size: 5vw;
+  }
+  h5 {
+    font-size: 4.5vw;
+  }
+  h6 {
+    font-size: 4vw;
+  }
+  p, a {
+    font-size: 4vw;
+  }
+}
+/* ========================================================================= */
+/* CONTAINERS */
+/* ========================================================================= */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  padding: 5% 0;
+}
+.black {
+  min-height: 100%;
+  padding: 5% 0;
+}
+.gray {
+  background-color: rgba(15,15,15, 1);
+  min-height: 100%;
+  padding: 5% 0;
+}
+/* highlight boxes (it should always be put with a container) */
+.highlight {
+  background-color: rgba(15,15,15, 1);
+  border: 2px groove rgba(256, 256, 256, 0.4);
+  padding: 5%;
+}
+.gray .highlight {
+  background-color: black;
+}
+/* ========================================================================= */
+/* Button */
+/* ========================================================================= */
+.btn-xl {
+  font-size: 1.5vw
+}
+.btn-red {
+  background-color: #F2181B;
+  color: inherit;
+  font-family: 'Work Sans', sans-serif;
+  margin: 3% 0;
+  opacity: 1;
+}
+.btn-red:hover {
+  color: inherit;
+  opacity: 0.75;
+}
+@media (max-width: 992px) {
+  .btn-xl {
+    font-size: 3vw;
+  }
+}
+/* ========================================================================= */
+/* Common Classes */
+/* ========================================================================= */
+.bold {
+  font-weight: 900;
+}/*bold font*/
+.bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end
+}
+.cursive {
+  font-family: 'Indie Flower', cursive;
+}/*cursive font*/
+.center {
+  text-align: center;
+} /* aligns text centrally*/
+.dotted {
+  border-style: dotted;
+  width: 10%
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} /* aligns content to the middle of the screen vertically */
+.no-border {
+  border: 0;
+}
+.parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+} /*parallax scrolling */
+.red {
+  color: #F2181B;
+}
+.right {
+  text-align: right;
+} /* aligns text to the right*/
+.rounded {
+  border-radius: 100;
+}
+/* ========================================================================= */
+/* Responsivness */
+/* ========================================================================= */
+@media (max-width: 992px) {
+  .margin-top {
+    margin-top: 80px;
+  }
+  .pc {
+    display: none
+  }
+}
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+  .parallax {
+    background-attachment: fixed;
+    height: 100%;
+  }
+}
+/* ========================================================================= */
+/* Navbar */
+/* ========================================================================= */
+.navbar-custom, .navbar-custom .dropdown-menu {
+  background-color: black;
+}
+/* button */
+.fa-bars {
+  color: #F2181B;
+}
+/* brand */
+.navbar-brand {
+  padding: 0 7%;
+  opacity: 1;
+}
+.navbar-brand img{
+ border: 0;
+ height: 30px;
+ width: auto;
+}
+/* items and animation */
+/* link colors and size */
+.navbar-custom .navbar-nav .nav-link, .navbar-custom .dropdown-item {
+  color: #F2181B;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.25vw;
+  text-align: center;
+}
+/* change the color of hovered links */
+.navbar-custom .nav-item:hover .nav-link, .navbar-custom .dropdown-item:hover {
+  background-color: inherit;
+  color: #FFF;
+  text-align: center;
+}
+/* animation on hover */
+.nav-link {
+  position: relative;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/* dropdown on hover */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+/* active link and no animation*/
+.active {
+  background-color: rgba(10, 10, 10, 1);
+}
+.navbar-custom .nav-item.active .nav-link, .active.dropdown-item {
+  background-color: inherit;
+  color: #FFF;
+  opacity: 1
+}
+.navbar-custom .nav-item.active .nav-link:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+@media (max-width: 992px) {
+  .navbar-custom {
+    padding: 3% 0;
+  }
+  .navbar-brand img{
+    height: 60px;
+  }
+  .navbar-custom .navbar-nav .nav-link, .navbar-custom .dropdown-item {
+    font-size: 4vw;
+  }
+  .navbar-toggler {
+    font-size: 55px;
+  }
+}
+/* ========================================================================= */
+/* FOOTER */
+/* ========================================================================= */
+.footer {
+  color: #F2181B;
+  padding: 5% 0 0;
+}
+.footer p {
+  opacity: 1;
+}
+.copyright {
+  padding: 5% 0;
+}
+.copyright p {
+  font-size: 1vw;
+  opacity: 0.6;
+}
+@media (max-width:992px) {
+  .copyright p {
+    font-size: 1.75vw;
+  }
+}
