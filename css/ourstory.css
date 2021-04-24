@@ -1,0 +1,89 @@
+/* ========================================================================= */
+/* Page Specific */
+/* ========================================================================= */
+.dreams {
+  background: url('../assets/dreams.jpg') rgba(0,0,0,0.7);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nms {
+  background: url('../assets/nms.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ========================================================================= */
+/* Create */
+/* ========================================================================= */
+.create-over {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.create-space {
+  position: relative;
+  height: 550vh;
+}
+.create-content {
+  position: relative;
+  height: 60vh;
+}
+.create-content h1 {
+  opacity: 0;
+  bottom: 30vh;
+  position: absolute;
+  transform: translateY(15vh);
+  width: 100%;
+}
+.create-content p {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+}
+.core {
+  margin-bottom: 10vh;
+}
+.core img {
+  border: 3px #F2181B solid;
+  border-radius: 100%;
+  margin: 5vh 0;
+  width: 60%;
+}
+/* ========================================================================= */
+/* Desk */
+/* ========================================================================= */
+.desk-top {
+  background: linear-gradient(#000000,#000000,#000000,rgba(0, 0, 0, 0));
+  backdrop-filter: blur(3px);
+  padding: 10vh 0;
+  height: 45vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+.desk-top img {
+  border: 3px #F2181B solid;
+  border-radius: 100%;
+  margin: 0 auto;
+  width: 10vw;
+}
+.desk-content {
+  margin-top: 45vh;
+}
+@media (max-width:992px) {
+  .desk-top {
+    height: 38vh;
+  }
+  .desk-top img {
+    width: 30vw;
+  }
+  .desk-content {
+    margin-top: 38vh;
+  }
+}

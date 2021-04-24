@@ -1,0 +1,20 @@
+.title {
+  padding: 20vh 15vw 5vh;
+}
+.map-img {
+  width: 60vw;
+  margin: 10vh auto;
+}
+@media (max-width:992px) {
+  .map-img {
+    width: 100%;
+    margin: 10vh auto;
+  }
+}
+.map-frame {
+  height: 50vh;
+  margin: 10vh 0;
+}
+.container-black:nth-child(3) h4{
+  margin: 5vh 0;
+}
